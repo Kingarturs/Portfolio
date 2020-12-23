@@ -1,13 +1,7 @@
 <script>
     import { Link } from "svelte-navigator";
-    import DarkMode from "svelte-dark-mode";
     
     const src = "../images/app_development.svg";
-
-    let theme;
-
-    $: switchTheme = theme === "dark" ? "light" : "dark";
-    $: document.body.className = theme; // "dark" or "light"
 
     export let location;
     export let navigate;
@@ -15,6 +9,7 @@
 
 <style type="text/scss">
     @import '../styles/vars';
+
     .app {
         height: 100%;
         width: 100%;
@@ -27,7 +22,7 @@
         -webkit-clip-path: polygon(74% 0, 100% 0, 100% 100%, 65% 100%);
         clip-path: polygon(74% 0, 100% 0, 100% 100%, 65% 100%);
         z-index: -1;
-        background-color: $secondary-color;
+        background-color: var(--secondary);
     }
 
     .content {
@@ -49,21 +44,21 @@
     }
         .name-text {
             font-size: 38px;
-            color: $textColor-light;
+            color: var(--color);
             margin: 0;
         }
 
         .dev-text {
             font-size: 68px;
-            color: $secondary-color;
+            color: var(--secondary);
             font-weight: bold;
             margin: 0;
             margin-top: 15px;
         }
 
         :global(.portfolio-button){
-            color: $buttonText-color;
-            background-color: $accent-color;
+            color: white;
+            background-color: var(--accent);
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
@@ -76,7 +71,7 @@
         }
 
         :global(.portfolio-button):visited{
-            color: $buttonText-color;
+            color: white;
         }
 
         :global(.portfolio-button):hover{
@@ -94,7 +89,6 @@
 </style>
 
 <main class="app">
-    <DarkMode bind:theme />
 
     <div class="background"></div>
 
