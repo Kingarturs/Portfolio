@@ -1,7 +1,8 @@
 <script>
     import { Link } from "svelte-navigator";
     import DarkMode from "svelte-dark-mode";
-    import DevSvg from "../img/landing_image.svelte";
+    
+    const src = "../images/app_development.svg";
 
     let theme;
 
@@ -104,7 +105,7 @@
             <Link class="portfolio-button" to="#">Watch my work!</Link>
         </div>
         <div id="image">
-            <DevSvg/>
+            <img width="80%" src={src} alt="dev animation">
         </div>
     </div>
 </main>
