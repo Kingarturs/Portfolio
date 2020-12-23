@@ -531,6 +531,11 @@ rollup-plugin-css-only@^3.1.0:
   dependencies:
     "@rollup/pluginutils" "4"
 
+rollup-plugin-inline-svg@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-inline-svg/-/rollup-plugin-inline-svg-2.0.0.tgz#18df215d429f2b868b59fc398ab3c776fc2fe901"
+  integrity sha512-lU1bKuKtej+zf3ZJuOyLNfEelKcw2y9dRhXo5Gs1Fn43EnL6HtpNFIIIepHGxnQZL74oVXL1V9oNFuT8MHnQtQ==
+
 rollup-plugin-livereload@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-livereload/-/rollup-plugin-livereload-2.0.0.tgz#d3928d74e8cf2ae4286c5dd46b770fd3f3b82313"
@@ -667,6 +672,11 @@ supports-color@^7.0.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
+
+svelte-dark-mode@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/svelte-dark-mode/-/svelte-dark-mode-0.3.0.tgz#26330bd7b595b920b44fa26d8b16960d1e69717d"
+  integrity sha512-CMQxnOAT1exBsdBNWCCni+gQig0vxPLFMdsN7Sw4FUl1wzyhJpxzsH/J6GMCSrJl0Ahbe1DPPA62kuChAwwIsg==
 
 svelte-navigator@^3.1.4:
   version "3.1.4"
