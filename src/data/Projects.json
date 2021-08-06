@@ -1,0 +1,78 @@
+{
+    "projects": [
+        {
+            "image": "./images/react-certification.png",
+            "title": "React Youtube Client",
+            "description": "A YouTube client made with React for the 2021 Wizeline React Certification.",
+            "learned": "On this project i learned React development best practices and common patterns. Some concepts applied to this project are Styling, Theming, Hooks, Custom Hooks, Context, Auth, Testing with Jest/React testing library.",
+            "url": "https://react-certification-2021-kingarturs.netlify.app/",
+            "tags": [
+                {
+                    "class": "react-tag",
+                    "name": "React"
+                },
+                {
+                    "class": "jest-tag",
+                    "name": "Jest"
+                }
+            ]
+        },
+        {
+            "image": "./images/correlation-covid.png",
+            "title": "Correlation Covid-19",
+            "description": "Webpage that shows the relation between patients' health pre-covid and the number of deaths.",
+            "learned": "I learned to clean a dataset in order to use it to train a statistic model and make predictions of the results based on known data.",
+            "url": "https://correlacion-covid.herokuapp.com/",
+            "tags": [
+                {
+                    "class": "flask-tag",
+                    "name": "Flask"
+                },
+                {
+                    "class": "javascript-tag",
+                    "name": "JavaScript"
+                },
+                {
+                    "class": "scss-tag",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "image": "./images/ple.png",
+            "title": "Personal Learning Environment",
+            "description": "Web app for sharing files and urls for learning purposes.",
+            "learned": "This was the first project and biggest project i worked on using Go and MongoDB, it was also one of the first projects i made intended for real use.",
+            "tags": [
+                {
+                    "class": "go-tag",
+                    "name": "Go"
+                },
+                {
+                    "class": "mongodb-tag",
+                    "name": "MongoDB"
+                }
+            ]
+        },
+        {
+            "image": "./images/social-apex.png",
+            "title": "Social Apex",
+            "description": "Social media platform created for players of Apex Legends",
+            "learned": "This was a funny side project i made with a friend in order to practice some React and Django. I learned a lot of both technologies and also practiced some MySQL knowledge i already had.",
+            "tags": [
+                {
+                    "class": "react-tag",
+                    "name": "React"
+                },
+                {
+                    "class": "django-tag",
+                    "name": "Django"
+                },
+                {
+                    "class": "mysql-tag",
+                    "name": "MySQL"
+                }
+            ]
+        }
+    ]
+}
