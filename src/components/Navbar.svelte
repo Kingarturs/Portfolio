@@ -24,13 +24,13 @@
 
 <style type="text/scss">
     :global(body.dark) {
-        --bg: #202020;
+        --bg: #181818;
         --color: white;
         --secondary-color: #979797;
         --accent: #F4CE2C;
         --border: #424242;
         --menu-bg: #2c2c2c;
-        --secondary: #FF2424;
+        --secondary: #FF3838;
     }
 
     :global(body.light) {
@@ -66,12 +66,6 @@
         align-items: center;
         justify-content: space-around;
         list-style: none;
-    }
-
-    :global(.nav-section) li {
-        height: 100%;
-        display: flex;
-        align-items: center;
     }
 
 	.navbar {
@@ -171,13 +165,20 @@
 
 </style>
 
-<div class="navbar">
+<svelte:head>
+    {#if checkedValue}
+		<meta name="theme-color" content="#181818">
+    {:else}
+		<meta name="theme-color" content="#F8F8F8">
+	{/if}
+</svelte:head>
+<nav class="navbar">
     <DarkMode bind:theme />
     <div class="nav-section spacing">
-        <a href="https://www.linkedin.com/in/luis-arturo" class="nav-icon" target="_blank">
+        <a href="https://www.linkedin.com/in/luis-arturo" aria-label="Linkedin" rel="noreferrer" class="nav-icon" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/Kingarturs" class="nav-icon" target="_blank">
+        <a href="https://github.com/Kingarturs" aria-label="Github" rel="noreferrer" class="nav-icon" target="_blank">
             <i class="fab fa-github"></i>
     </div>
 
@@ -191,7 +192,7 @@
         <Link class="nav-item" to="/">Home</Link>
         <Link class="nav-item" to="/portfolio">Portfolio</Link>
         <Link class="nav-item" to="/about">About</Link>
-        <Switch 
+        <Switch
             offColor="#2B303F"
             offHandleColor="#FF2424"
             onHandleColor="#FF2424"
@@ -205,7 +206,7 @@
             <span slot="unCheckedIcon" />
         </Switch>
     </div>
-</div>
+</nav>
 
 <div class={"menu" + (open ? " open" : "")}>
     <Link class="mobile-item" to="/" on:click={switchMenuState} >Home</Link>

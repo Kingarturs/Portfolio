@@ -32,16 +32,6 @@
                 color: var(--secondary);
                 font-weight: bold;
             }
-
-            .tag-container {
-                padding: 1rem 0;
-                display: flex;
-                width: 100%;
-    
-                .tag {
-                    font-size: 1rem;
-                }
-            }
         }
 
         .cards-container {
@@ -67,10 +57,6 @@
                 text-align: center;
             }
 
-            .tag-container {
-                justify-content: center;
-            }
-
             .cards-container {
                 justify-content: center;
                 padding: 0 1rem;
@@ -89,9 +75,6 @@
     <div class="title-container">
         <h1 class="title">Projects</h1>
         <p class="subtitle">Here is some of my work! <span class="click">Click one for details!</span></p>
-        <div class="tag-container">
-            <!-- <span class="tag">Tags:</span> -->
-        </div>
     </div>
     <div class="cards-container">
         {#each projects as project}

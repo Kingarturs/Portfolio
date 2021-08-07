@@ -77,7 +77,7 @@
     <div>
         <h1>{project.title}</h1>
         {#if project.url}
-            <a href={project.url}>
+            <a href={project.url} rel="noreferrer">
                 <p>Take a look!</p>
             </a>
         {/if}

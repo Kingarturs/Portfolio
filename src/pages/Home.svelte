@@ -22,7 +22,7 @@
         overflow: hidden;
     }
 
-    .skills {
+    /* .skills {
         padding: 0px 4rem;
         box-sizing: border-box;
         width: 100%;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
-    }
+    } */
 
     .text {
         width: 55%;
@@ -57,7 +57,6 @@
 
         :global(.portfolio-button){
             color: var(--secondary);
-            background-color: var(--bg);
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
