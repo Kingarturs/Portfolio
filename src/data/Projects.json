@@ -39,6 +39,26 @@
             ]
         },
         {
+            "image": "./images/seguimiento-reprobacion.png",
+            "title": "Seguimiento Reprobación",
+            "description": "Web application created to keep an eye on the failure rates of my college.",
+            "learned": "For this project i made use of the Django framework, vanilla javascript, css and html and a database on MongoDB.",
+            "tags": [
+                {
+                    "class": "django-tag",
+                    "name": "Django"
+                },
+                {
+                    "class": "javascript-tag",
+                    "name": "Js"
+                },
+                {
+                    "class": "mongodb-tag",
+                    "name": "MongoDB"
+                }
+            ]
+        },
+        {
             "image": "./images/ple.png",
             "title": "Personal Learning Environment",
             "description": "Web app for sharing files and urls for learning purposes.",
@@ -64,6 +84,42 @@
                     "class": "react-tag",
                     "name": "React"
                 },
+                {
+                    "class": "django-tag",
+                    "name": "Django"
+                },
+                {
+                    "class": "mysql-tag",
+                    "name": "MySQL"
+                }
+            ]
+        },
+        {
+            "image": "./images/ignite.jpeg",
+            "title": "Ignite Shop",
+            "description": "Fake online store thats sells products decorated with AI generated images.",
+            "learned": "This was a really cool project me and some friends made for a college subject, i learned a bit about deep learning because i had to use GANS to generate images based on an album cover dataset, then, using flask we made a simple API that returned an image generated with our trained model, then, using a superresolution model we scaled up the images to place it over another one of a cup or a shirt, which then was saved to firebase and used to load the products view on the frontend.",
+            "tags": [
+                {
+                    "class": "react-tag",
+                    "name": "React"
+                },
+                {
+                    "class": "flask-tag",
+                    "name": "Flask"
+                },
+                {
+                    "class": "pytorch-tag",
+                    "name": "PyTorch"
+                }
+            ]
+        },
+        {
+            "image": "./images/mercedes-crm.png",
+            "title": "Mercedes CRM",
+            "description": "A project for college where i did a CRM for a car dealership",
+            "learned": "This is a very simple project made with Django, vanilla javascript + tailwindCSS and a database in MySQL.",
+            "tags": [
                 {
                     "class": "django-tag",
                     "name": "Django"

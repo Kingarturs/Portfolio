@@ -88,7 +88,7 @@
 <section class="portfolio-container">
     <div class="title-container">
         <h1 class="title">Projects</h1>
-        <p class="subtitle">Here is some of my work! <span class="click">Try and click one!</span></p>
+        <p class="subtitle">Here is some of my work! <span class="click">Click one for details!</span></p>
         <div class="tag-container">
             <!-- <span class="tag">Tags:</span> -->
         </div>

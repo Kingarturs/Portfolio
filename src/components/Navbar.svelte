@@ -154,7 +154,7 @@
         }
     }
 
-    @media screen and (max-width: 428px) {
+    @media screen and (max-width: 550px) {
         .desktop {
             display: none;
         }

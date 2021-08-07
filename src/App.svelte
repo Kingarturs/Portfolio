@@ -37,7 +37,7 @@
 <Router>
     <Navbar />
 	<Modal>
-		<Route path="/" component={Home} primary={true}/>
+		<Route path="/" component={Home} primary={false}/>
 		<Route path="/portfolio" component={Portfolio} primary={false}/>
 	</Modal>
 </Router>
