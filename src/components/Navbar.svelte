@@ -28,7 +28,7 @@
         --color: white;
         --secondary-color: #979797;
         --accent: #F4CE2C;
-        --border: #747474;
+        --border: #424242;
         --menu-bg: #2c2c2c;
         --secondary: #FF2424;
     }
@@ -39,7 +39,7 @@
         --secondary-color: #696969;
         --accent: #f4cf2c;
         --border: #dadada;
-        --menu-bg: #cccccc;
+        --menu-bg: #e7e7e7;
         --secondary: #FF2424;
     }
 
@@ -117,6 +117,7 @@
         flex-direction: column;
         align-items: center;
         background-color: var(--menu-bg);
+        display: none;
         
         :global(.mobile-item) {
             color: var(--color);
@@ -125,7 +126,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 2.5rem;
+            height: 3rem;
             font-weight: bold;
             margin: 0;
         }
@@ -135,7 +136,7 @@
         }
     }
     .open {
-        height: 10rem;
+        height: 12rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -162,6 +163,10 @@
         .mobile {
             display: block;
         }
+
+        .menu {
+            display: block;
+        }
     }
 
 </style>
@@ -185,7 +190,7 @@
     <div class="desktop nav-section">
         <Link class="nav-item" to="/">Home</Link>
         <Link class="nav-item" to="/portfolio">Portfolio</Link>
-        <Link class="nav-item" to="#">About</Link>
+        <Link class="nav-item" to="/about">About</Link>
         <Switch 
             offColor="#2B303F"
             offHandleColor="#FF2424"
@@ -203,20 +208,22 @@
 </div>
 
 <div class={"menu" + (open ? " open" : "")}>
-    <Link class="mobile-item" to="/">Home</Link>
-    <Link class="mobile-item" to="/portfolio">Portfolio</Link>
-    <Link class="mobile-item" to="#">About</Link>
-    <Switch 
-        offColor="#2B303F"
-        offHandleColor="#FF2424"
-        onHandleColor="#FF2424"
-        onColor="#DDD"
-        unCheckedIcon={false}
-        checked={checkedValue}
-        handleDiameter={""}
-        on:change={handleChange}
-    >
-        <span slot="checkedIcon" />
-        <span slot="unCheckedIcon" />
-    </Switch>
+    <Link class="mobile-item" to="/" on:click={switchMenuState} >Home</Link>
+    <Link class="mobile-item" to="/portfolio" on:click={switchMenuState} >Portfolio</Link>
+    <Link class="mobile-item" to="/about" on:click={switchMenuState} >About</Link>
+    <div class="mobile-item">
+        <Switch
+            offColor="#2B303F"
+            offHandleColor="#FF2424"
+            onHandleColor="#FF2424"
+            onColor="#DDD"
+            unCheckedIcon={false}
+            checked={checkedValue}
+            handleDiameter={""}
+            on:change={handleChange}
+        >
+            <span slot="checkedIcon" />
+            <span slot="unCheckedIcon" />
+        </Switch>
+    </div>
 </div>

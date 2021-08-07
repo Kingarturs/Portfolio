@@ -4,6 +4,7 @@
     import Home from "./pages/Home.svelte";
     import Portfolio from "./pages/Portfolio.svelte";
 	import Modal from 'svelte-simple-modal';
+	import About from "./pages/About.svelte";
 </script>
 
 <style type="text/scss">
@@ -39,5 +40,6 @@
 	<Modal>
 		<Route path="/" component={Home} primary={false}/>
 		<Route path="/portfolio" component={Portfolio} primary={false}/>
+		<Route path="/about" component={About} primary={false}/>
 	</Modal>
 </Router>
